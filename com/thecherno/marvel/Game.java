@@ -13,12 +13,12 @@ public class Game implements Runnable {
 		thread.start();
 	}
 	
-	public synchronized void stop() {
-		try {
-			thread.join();
-		} catch(InterruptedException e ) {
-			e.printStackTrace();
-		}
-	}
+//	public synchronized void stop() {
+//		try {
+//			thread.join();
+//		} catch(InterruptedException e ) {
+//			e.printStackTrace();
+//		}
+//	}
 
 }
