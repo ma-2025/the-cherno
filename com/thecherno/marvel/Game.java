@@ -2,6 +2,7 @@ package com.thecherno.marvel;
 
 import java.awt.Canvas;
 import java.awt.Dimension;
+import java.awt.image.BufferStrategy;
 
 import javax.swing.JFrame;
 
@@ -41,8 +42,24 @@ public class Game extends Canvas implements Runnable {
 	
 	public void run() {
 		while (running) {
-			System.out.println("Running...");
+			update();
+			render();
+		
 		}
+	}
+	
+	public void update() {
+		
+	}
+	
+	public void render() {
+		BufferStrategy bs = getBufferStrategy();
+		if(bs == null) {
+			createBufferStrategy(3);
+			return;
+		}
+		
+		
 	}
 	
 	public static void main(String[] args) {
