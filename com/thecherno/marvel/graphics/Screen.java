@@ -28,8 +28,9 @@ public class Screen {
 	}
 		for(int y = 0; y < height; y++) {
 			for(int x = 0; x < width; x++) {
-				pixels[time + time * width] = 0xff00ff; 
+				pixels[time + time * width] = oooppnjvgy; 
 				//(20, 30)
+				
 			}
 		}
 	}
