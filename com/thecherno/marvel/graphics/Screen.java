@@ -30,7 +30,7 @@ public class Screen {
 			for(int x = 0; x < width; x++) {
 				pixels[time + time * width] = oooppnjvgy; 
 				//(20, 30)
-				
+				// testing github - working from school!
 			}
 		}
 	}
