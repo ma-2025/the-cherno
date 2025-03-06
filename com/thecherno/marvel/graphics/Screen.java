@@ -28,9 +28,10 @@ public class Screen {
 	}
 		for(int y = 0; y < height; y++) {
 			for(int x = 0; x < width; x++) {
-				pixels[time + time * width] = oooppnjvgy; 
-				//(20, 30)
-				// testing github - working from school!
+				pixels[x + y * width] = 0xff00ff; 
+				throw new ArrayIndexOutOfBoundsException();
+				
+				
 			}
 		}
 	}
