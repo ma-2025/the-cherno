@@ -1,7 +1,7 @@
 package com.thecherno.marvel.graphics;
 
 public class Screen {
-	// testing - this is a test comment for github, delete it later :)
+	
 	private int width, height;
 	public int[] pixels;
 	
