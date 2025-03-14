@@ -97,7 +97,7 @@ public class Game extends Canvas implements Runnable {
 		}
 		
 		screen.clear();
-		screen.render(x, y);
+		screen.render(x, 0);
 		
 		
 		
