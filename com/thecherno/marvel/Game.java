@@ -11,6 +11,7 @@ import java.awt.image.DataBufferInt;
 import javax.swing.JFrame;
 
 import com.thecherno.marvel.graphics.Screen;
+import com.thecherno.marvel.input.Keyboard;
 
 public class Game extends Canvas implements Runnable {
 	private static final long serialVersionUID = 1L;
@@ -22,6 +23,7 @@ public class Game extends Canvas implements Runnable {
 	
 	private Thread thread;
 	private JFrame frame;
+	private Keyboard key;
 	private boolean running = false;
 	
 	private Screen screen;
@@ -33,8 +35,10 @@ public class Game extends Canvas implements Runnable {
 		Dimension size = new Dimension(width*scale, height*scale);
 		setPreferredSize(size);
 		screen = new Screen(width, height);
-		
 		frame = new JFrame();
+		key = new Keyboard();
+		
+		addKeyListener(key);
 	}
 	
 	public synchronized void start() {
@@ -84,7 +88,9 @@ public class Game extends Canvas implements Runnable {
 		stop();
 	}
 	int x = 0, y = 0;
+	
 	public void update() {
+		key.update();
 		x++;
 		y++;
 	}
@@ -97,7 +103,7 @@ public class Game extends Canvas implements Runnable {
 		}
 		
 		screen.clear();
-		screen.render(x, 0);
+		screen.render(x, y);
 		
 		
 		
