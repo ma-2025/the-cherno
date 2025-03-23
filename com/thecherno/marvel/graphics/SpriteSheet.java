@@ -10,6 +10,7 @@ public class SpriteSheet {
 	{
 		this.path = path;
 		this.SIZE = size;
+		int boolean;
 	}
 
 }
