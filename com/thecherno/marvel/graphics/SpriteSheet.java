@@ -9,8 +9,10 @@ public class SpriteSheet {
 	public SpriteSheet (String path, int size)
 	{
 		this.path = path;
-		this.SIZE = size;
-		int boolean;
+		SIZE = size;
+		pixels = new int [SIZE * SIZE];
 	}
+	
+	
 
 }
