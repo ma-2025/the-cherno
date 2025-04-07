@@ -7,6 +7,12 @@ public class Sprite {
 	public int[] pixels;
 	private SpriteSheet sheet;
 	
-	public Sprite (int size) {
-		
+	public Sprite(int size, int x, int y, SpriteSheet sheet) {
+		SIZE = size;
+		this.x = x * size;
+		this.y = y * size;
+		this.sheet = sheet;
+		load();
 	}
+	
+}
