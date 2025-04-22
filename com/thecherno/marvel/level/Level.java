@@ -32,7 +32,7 @@ public class Level {
 	}
 	
 	public void render(int xScroll, int yScroll, Screen screen) {
-		
+		int x0 = xScroll / 16;
 	}
 	
 }
