@@ -6,7 +6,8 @@ import com.thecherno.marvel.level.tile.Tile;
 
 public class Screen {
 	
-	private int width, height;
+	public int width;
+	public int height;
 	public int[] pixels;
 	public final int MAP_SIZE = 64;
 	public final int MAP_SIZE_MASK = MAP_SIZE - 1;
