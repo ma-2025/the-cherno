@@ -33,6 +33,7 @@ public class Level {
 	}
 	
 	public void render(int xScroll, int yScroll, Screen screen) {
+		screen.setOffset(xScroll, yScroll);
 		int x0 = xScroll >> 4;
 		int x1 = (xScroll + screen.width) >> 4;
 		int y0 = yScroll >> 4;
@@ -41,7 +42,7 @@ public class Level {
 	
 	public Tile getTile (int x, int y){
 		if (tiles [x + y * width] == 0 )return Tile.grass;
-		return null;
+		return Tile.voidTile;
 		
 	}
 	
